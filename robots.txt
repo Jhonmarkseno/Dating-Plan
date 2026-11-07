@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jhonmarkseno.github.io/Date_plan/sitemap.xml

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Christmas tree with a heart">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06111f" />
+      <stop offset="0.55" stop-color="#0a2842" />
+      <stop offset="1" stop-color="#10405f" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#5ec8ff" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#5ec8ff" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="tree" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4ecdc4" />
+      <stop offset="0.5" stop-color="#1f7a68" />
+      <stop offset="1" stop-color="#0b3b35" />
+    </linearGradient>
+    <linearGradient id="treeSnow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#dff4ff" stop-opacity="0.18" />
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8a8a" />
+      <stop offset="0.55" stop-color="#e63946" />
+      <stop offset="1" stop-color="#9d0208" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5fcff" />
+      <stop offset="1" stop-color="#b7d8ef" />
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)" />
+  <circle cx="256" cy="210" r="230" fill="url(#glow)" />
+
+  <g fill="#ffffff">
+    <circle cx="96" cy="112" r="4" opacity="0.7" />
+    <circle cx="150" cy="74" r="3" opacity="0.5" />
+    <circle cx="408" cy="90" r="4.5" opacity="0.65" />
+    <circle cx="438" cy="164" r="3" opacity="0.45" />
+    <circle cx="66" cy="220" r="3.4" opacity="0.5" />
+    <circle cx="452" cy="260" r="3.6" opacity="0.55" />
+  </g>
+
+  <path d="M256 148 L138 318 L204 318 L112 434 L400 434 L308 318 L374 318 Z" fill="url(#tree)" />
+  <path d="M256 178 L164 326 L216 326 L146 420 L366 420 L296 326 L348 326 Z" fill="url(#treeSnow)" opacity="0.22" />
+  <path d="M256 148 L138 318 L204 318 L112 434 L400 434 L308 318 L374 318 Z" fill="none" stroke="#dff8ff" stroke-opacity="0.35" stroke-width="5" stroke-linejoin="round" />
+
+  <g filter="url(#soft)" opacity="0.65" fill="#ffcf6b">
+    <circle cx="182" cy="356" r="20" />
+    <circle cx="330" cy="388" r="17" />
+    <circle cx="286" cy="296" r="14" />
+  </g>
+
+  <path d="M256 300 C241 278 206 279 206 311 C206 340 237 360 256 378 C275 360 306 340 306 311 C306 279 271 278 256 300 Z" fill="url(#heart)" stroke="#fff5f5" stroke-width="7" stroke-opacity="0.9" />
+
+  <path d="M0 442 C94 428 150 448 250 440 C356 432 410 450 512 436 L512 512 L0 512 Z" fill="url(#ground)" />
+
+  <g fill="#ffcf6b">
+    <path d="M256 104 L263 122 L282 124 L267 136 L272 155 L256 144 L240 155 L245 136 L230 124 L249 122 Z" />
+  </g>
+
+  <g fill="#ffffff">
+    <circle cx="128" cy="438" r="5" opacity="0.8" />
+    <circle cx="384" cy="446" r="4" opacity="0.7" />
+    <circle cx="226" cy="468" r="4.5" opacity="0.6" />
+    <circle cx="330" cy="480" r="3.5" opacity="0.55" />
+  </g>
+</svg>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="A little Christmas date proposal — say yes and build our perfect date plan together." />
+<meta name="theme-color" content="#2a0f33" />
+<meta property="og:title" content="Will you go on a date with me? 💌" />
+<meta property="og:description" content="A little Christmas date proposal, made with love." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jhonmarkseno.github.io/Date_plan/" />
+<meta property="og:image" content="https://jhonmarkseno.github.io/Date_plan/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="A Christmas date proposal card asking: Will you go on a date with me?" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Will you go on a date with me? 💌" />
+<meta name="twitter:description" content="A little Christmas date proposal, made with love." />
+<meta name="twitter:image" content="https://jhonmarkseno.github.io/Date_plan/og-image.png" />
+<link rel="canonical" href="https://jhonmarkseno.github.io/Date_plan/" />
+<title>Will you go on a date with me? 💌</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <span class="aurora aurora-1"></span>
+    <span class="aurora aurora-2"></span>
+    <span class="aurora aurora-3"></span>
+    <div class="stars" id="stars"></div>
+    <div class="grain"></div>
+  </div>
+
+  <div id="hearts" aria-hidden="true"></div>
+
+  <main class="card" id="card">
+    <span class="badge">A little question for you 💌</span>
+    <div class="emoji-wrap">
+      <span class="emoji" id="mainEmoji">🥺</span>
+    </div>
+    <h1 id="question">Will you go on a date with me?</h1>
+    <p class="subtitle">I have something special planned for us.<br />Just pick <strong>YES</strong>, please! 💕</p>
+    <div class="buttons">
+      <button class="btn btn-yes" id="yesBtn" type="button">Yes, of course! <span aria-hidden="true">💖</span></button>
+      <button class="btn btn-no" id="noBtn" type="button">No 😢</button>
+    </div>
+    <p class="tease" id="tease" aria-live="polite"></p>
+    <p class="card-hint">Psst… the “No” button is a little shy 😌</p>
+  </main>
+
+  <footer class="site-footer">Made with ♥ · Christmas Edition</footer>
+
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="yesTitle">
+    <div class="snow" id="snow" aria-hidden="true"></div>
+    <div class="tree tree-left" aria-hidden="true">🎄</div>
+    <div class="tree tree-right" aria-hidden="true">🎄</div>
+
+    <div class="overlay-inner">
+      <div class="stepper" id="stepper" role="group" aria-label="Progress">
+        <span class="dot active" data-dot="intro" aria-hidden="true"></span>
+        <span class="dot" data-dot="plan" aria-hidden="true"></span>
+        <span class="dot" data-dot="choices" aria-hidden="true"></span>
+        <span class="dot" data-dot="confirm" aria-hidden="true"></span>
+        <span class="step-count" id="stepCount" aria-live="polite" aria-atomic="true">Step 1 of 4</span>
+      </div>
+
+      <section class="step step-intro active" data-step="intro" aria-label="Yes">
+        <div class="overlay-hearts" aria-hidden="true">🎄🎁🎄</div>
+        <h2 class="big" id="yesTitle" tabindex="-1"><span class="big-text">YES!!!</span> <span aria-hidden="true">🎄</span></h2>
+        <p class="msg" id="finalMsg">I knew you'd say yes 😌<br />Here's our Christmas date plan 💝</p>
+        <button class="btn btn-next" id="introNext" type="button">Proceed 💝</button>
+      </section>
+
+      <section class="step step-plan" data-step="plan" aria-label="Date plan">
+        <div class="plan">
+          <div class="plan-head">
+            <h3 id="planTitle" tabindex="-1"><span class="grad-title">Our Christmas Date Plan</span> <span aria-hidden="true">🎄</span></h3>
+            <span class="save-date">Save the date ❄️</span>
+          </div>
+
+          <div class="plan-item">
+            <span class="plan-icon" aria-hidden="true">☕</span>
+            <div class="plan-body">
+              <div class="plan-top">
+                <span class="plan-time">4:00 PM</span>
+                <span class="plan-title">Cozy café time</span>
+              </div>
+              <p class="plan-desc">Warm drinks, fairy lights, and getting to know each other.</p>
+              <p class="pick-line" data-slot="drink"></p>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <span class="plan-icon" aria-hidden="true">✨</span>
+            <div class="plan-body">
+              <div class="plan-top">
+                <span class="plan-time">5:30 PM</span>
+                <span class="plan-title">Stroll through the Christmas lights</span>
+              </div>
+              <p class="plan-desc">Twinkling streets, festive music, and holding hands.</p>
+              <p class="pick-line" data-slot="activity"></p>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <span class="plan-icon" aria-hidden="true">🍽️</span>
+            <div class="plan-body">
+              <div class="plan-top">
+                <span class="plan-time">7:00 PM</span>
+                <span class="plan-title">Noche Buena-style dinner for two</span>
+              </div>
+              <p class="plan-desc">Good food, warm smiles, and lots of laughing.</p>
+              <p class="pick-line" data-slot="food"></p>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <span class="plan-icon" aria-hidden="true">🌙</span>
+            <div class="plan-body">
+              <div class="plan-top">
+                <span class="plan-time">8:30 PM</span>
+                <span class="plan-title">Dessert, gifts &amp; stargazing</span>
+              </div>
+              <p class="plan-desc">Sweet endings under the winter sky.</p>
+              <p class="pick-line" data-slot="other"></p>
+            </div>
+          </div>
+
+          <p class="plan-note">Dress code: cozy &amp; festive 🧣🎄</p>
+        </div>
+        <div class="step-nav">
+          <button class="btn btn-back" id="planBack" type="button">← Back</button>
+          <button class="btn btn-next" id="planNext" type="button">Choose your picks 💝</button>
+        </div>
+      </section>
+
+      <section class="step step-choices" data-step="choices" aria-label="Your choices">
+        <div class="plan choices-card">
+          <h4>Now it's your turn 💝</h4>
+          <p class="hint">Choose what you like — our plan will update for you.</p>
+          <p class="pick-progress" id="pickProgress" aria-live="polite">0 of 4 picked — choose one from each category</p>
+
+          <div class="choice-group">
+            <span class="choice-label">Drink</span>
+            <div class="choice-list" data-category="drink">
+              <button type="button" class="chip" data-value="Hot chocolate" data-emoji="🍫" aria-pressed="false">🍫 Hot chocolate</button>
+              <button type="button" class="chip" data-value="Coffee" data-emoji="☕" aria-pressed="false">☕ Coffee</button>
+              <button type="button" class="chip" data-value="Milk tea" data-emoji="🧋" aria-pressed="false">🧋 Milk tea</button>
+              <button type="button" class="chip" data-value="Iced latte" data-emoji="🥤" aria-pressed="false">🥤 Iced latte</button>
+            </div>
+          </div>
+
+          <div class="choice-group">
+            <span class="choice-label">Food</span>
+            <div class="choice-list" data-category="food">
+              <button type="button" class="chip" data-value="Pasta" data-emoji="🍝" aria-pressed="false">🍝 Pasta</button>
+              <button type="button" class="chip" data-value="Pizza" data-emoji="🍕" aria-pressed="false">🍕 Pizza</button>
+              <button type="button" class="chip" data-value="Sushi" data-emoji="🍣" aria-pressed="false">🍣 Sushi</button>
+              <button type="button" class="chip" data-value="Burger" data-emoji="🍔" aria-pressed="false">🍔 Burger</button>
+            </div>
+          </div>
+
+          <div class="choice-group">
+            <span class="choice-label">Activity</span>
+            <div class="choice-list" data-category="activity">
+              <button type="button" class="chip" data-value="Stroll through the Christmas lights" data-emoji="🎄" aria-pressed="false">🎄 Stroll through the Christmas lights</button>
+              <button type="button" class="chip" data-value="Ice skating" data-emoji="⛸️" aria-pressed="false">⛸️ Ice skating</button>
+              <button type="button" class="chip" data-value="Christmas market" data-emoji="🎁" aria-pressed="false">🎁 Christmas market</button>
+              <button type="button" class="chip" data-value="Movie night" data-emoji="🎬" aria-pressed="false">🎬 Movie night</button>
+            </div>
+          </div>
+
+          <div class="choice-group">
+            <span class="choice-label">Other treat</span>
+            <div class="choice-list" data-category="other">
+              <button type="button" class="chip" data-value="Cake" data-emoji="🍰" aria-pressed="false">🍰 Cake</button>
+              <button type="button" class="chip" data-value="Ice cream" data-emoji="🍦" aria-pressed="false">🍦 Ice cream</button>
+              <button type="button" class="chip" data-value="Fries" data-emoji="🍟" aria-pressed="false">🍟 Fries</button>
+              <button type="button" class="chip" data-value="Cookies" data-emoji="🍪" aria-pressed="false">🍪 Cookies</button>
+            </div>
+          </div>
+
+          <p class="pick-summary" id="pickSummary" aria-live="polite"></p>
+        </div>
+        <div class="step-nav">
+          <button class="btn btn-back" id="choicesBack" type="button">← Back</button>
+          <button class="btn btn-confirm" id="confirmBtn" type="button" disabled>Lock in our date 💝</button>
+        </div>
+      </section>
+
+      <section class="step step-confirm" data-step="confirm" aria-label="Date confirmed">
+        <div class="confirm-card">
+          <div class="confirm-icon" aria-hidden="true">💝</div>
+          <h3 class="confirm-title" id="confirmTitle" tabindex="-1">It's a date!</h3>
+          <p class="confirm-sub">Here's what we agreed on</p>
+          <ul class="confirm-list" id="confirmList"></ul>
+          <p class="confirm-note">See you there — wear something cozy 🧣</p>
+          <div class="confirm-actions">
+            <button class="btn btn-save" id="saveBtn" type="button">Save our plan 📄</button>
+            <button class="btn btn-copy" id="copyBtn" type="button">Copy plan 📋</button>
+            <button class="btn btn-edit" id="editBtn" type="button">Edit choices ✏️</button>
+          </div>
+        </div>
+      </section>
+
+      <button class="btn btn-again" id="againBtn" type="button">Start over 🔁</button>
+    </div>
+  </div>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
